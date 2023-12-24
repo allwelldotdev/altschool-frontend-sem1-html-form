@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form I Filled Out While Registering for AltSchool Africa</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hi there 👋🏾, welcome to Allwell's AltSchool Assignment Submission</h1>
+      <nav><a href="about.html">Learn more about Allwell</a></nav>
+    </header>
+    <main>
+      <section>
+        <form action="">
+          <div class="form-header">
+            <h2>Application Form</h2>
+            <p>Fill in your details</p>
+          </div>
+          <div class="form-first-name">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter first name"
+              required
+            />
+          </div>
+          <div class="form-last-name">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter last name"
+              required
+            />
+          </div>
+          <div class="form-gender">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="" selected disabled>Select gender</option>
+              <option value="male" title="Male">Male</option>
+              <option value="female" title="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-dob">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required />
+          </div>
+          <div class="form-email">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+          <div class="form-education-leve">
+            <label for="education-level">Education Level</label>
+            <select name="education-level" id="education-level" required>
+              <option value="" selected disabled>
+                Select level of education
+              </option>
+              <option value="bsc" title="Bsc">Bsc</option>
+              <option value="msc" title="Msc">Msc</option>
+              <option value="diploma" title="Diploma">Diploma</option>
+              <option value="phd" title="Doctorate (PhD)">
+                Doctorate (PhD)
+              </option>
+              <option
+                value="high-school-secondary-school"
+                title="High School / Secondary School"
+              >
+                High School / Secondary School
+              </option>
+              <option value="under-graduate" title="Under Graduate">
+                Under Graduate
+              </option>
+              <option
+                value="junior-middle-school"
+                title="Junior / Middle School"
+              >
+                Junior / Middle School
+              </option>
+              <option value="post-graduate" title="Post Graduate">
+                Post Graduate
+              </option>
+            </select>
+          </div>
+          <div class="form-country">
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+              <option value="" selected disabled>Select your country</option>
+              <option value="Afghanistan" title="Afghanistan">
+                Afghanistan
+              </option>
+              <option value="Albania" title="Albania">Albania</option>
+              <option value="Algeria" title="Algeria">Algeria</option>
+              <option value="Andorra" title="Andorra">Andorra</option>
+              <!-- Add more countries here -->
+              <option value="Brazil" title="Brazil">Brazil</option>
+              <!-- Add more countries here -->
+              <option value="Canada" title="Canada">Canada</option>
+              <option value="China" title="China">China</option>
+              <!-- Add more countries here -->
+              <option value="Niger" title="Niger">Niger</option>
+              <option value="Nigeria" title="Nigeria">Nigeria</option>
+              <!-- Add more countries here -->
+              <option value="Zimbabwe" title="Zimbabwe">Zimbabwe</option>
+              <option value="Zambia" title="Zambia">Zambia</option>
+              <option value="Zimbabwe" title="Zimbabwe">Zimbabwe</option>
+              <!-- Add more countries here -->
+              <option value="United States" title="United States">
+                United States
+              </option>
+              <!-- Add more countries here -->
+            </select>
+          </div>
+          <div class="form-state-city">
+            <label for="country-state">State/City of Residence</label>
+            <input
+              type="text"
+              id="country-state"
+              placeholder="Enter your state of residence"
+              required
+            />
+          </div>
+          <div class="form-employment-status">
+            <label for="employment-status">Employment Status</label>
+            <select name="employment-status" id="employment-status" required>
+              <option value="" selected disabled>
+                Enter your employment status
+              </option>
+              <option value="employed" title="employed">Employed</option>
+              <option value="unemployed" title="unemployed">Unemployed</option>
+              <option value="self-employed" title="self-employed">
+                Self-employed
+              </option>
+            </select>
+          </div>
+          <div class="form-phone-number">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="number"
+              id="phone-number"
+              placeholder="08154387000"
+              required
+            />
+          </div>
+          <div class="form-school">
+            <label for="school">Choose School</label>
+            <select name="school" id="school" required>
+              <option value="" selected disabled>Select school</option>
+              <option value="school-of-business" title="School of Business">
+                School of Business
+              </option>
+              <option
+                value="school-of-creative-economy"
+                title="School of Creative Economy"
+              >
+                School of Creative Economy
+              </option>
+              <option value="school-of-data" title="School of Data">
+                School of Data
+              </option>
+              <option
+                value="school-of-engineering"
+                title="School of Engineering"
+              >
+                School of Engineering
+              </option>
+              <option value="school-of-product" title="School of Product">
+                School of Product
+              </option>
+            </select>
+          </div>
+          <div class="form-course-of-study">
+            <label for="course-of-study">Choose Course of Study</label>
+            <select name="course-of-study" id="course-of-study" required>
+              <option value="" selected disabled>Select course</option>
+              <!-- courses shown here are dependent on school selected - applied by a JS function -->
+              <option value="frontend" title="Front-end Engineering">
+                Front-end Engineering
+              </option>
+              <option value="backend" title="Back-end Engineering">
+                Back-end Engineering
+              </option>
+              <option value="cloud" title="Cloud Engineering">
+                Cloud Engineering
+              </option>
+              <!-- courses shown here are dependent on school selected - applied by a JS function - used the above as dummy selections under School of Engineering -->
+            </select>
+          </div>
+          <div class="form-channel">
+            <label for="channel">How did you hear about us?</label>
+            <select name="channel" id="channel" required>
+              <option value="" selected disabled>Select channel</option>
+              <option value="twitter" title="Twitter">Twitter</option>
+              <option value="facebook" title="Facebook">Facebook</option>
+              <option value="linkedin" title="LinkedIn">LinkedIn</option>
+              <option value="youtube" title="YouTube">YouTube</option>
+              <option value="friend" title="Friend">Friend</option>
+              <option value="whatsapp" title="WhatsApp">WhatsApp</option>
+              <option value="instagram" title="Instagram">Instagram</option>
+              <option value="bill-board" title="Bill board">Bill board</option>
+              <option value="other" title="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-discount-code">
+            <label for="discount-code"
+              >Scholarship/Discount Code (optional)</label
+            >
+            <input
+              type="number"
+              id="discount-code"
+              placeholder="Scholarship or student ID or discount codes"
+            />
+          </div>
+          <div class="form-sub-text">
+            <p>
+              By clicking continue, I agree to <a href="#">Terms of Use</a> and
+              acknowledge that I <br />
+              have read the <a href="#">Privacy Policy</a>.
+            </p>
+          </div>
+          <div class="form-btn"><button>Proceed</button></div>
+        </form>
+        <div>
+          <p>Already have an account? <a href="#">Sign In</a></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
